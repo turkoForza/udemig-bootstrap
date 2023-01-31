@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Udemig</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap.css">  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+</head>
+<body class="bg-body-secondary">
+
+    <!--! NAVBAR-->
+    <nav class="navbar navbar-expand-md bg-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img class="img-thumbnail" style="height: 60px;" src="/images/Udemig.png" alt=""> Udemig
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div id="nContent" class="collapse navbar-collapse justify-content-end">
+                <ul class="navbar-nav gap-4">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Anasayfa</a></li>
+                    <li class="nav-item"><a class="nav-link" href="eğitimlerimiz.html">Eğitimlerimiz</a></li>
+                    <li class="nav-item"><a class="nav-link" href="iletişim.html">İletişim</a></li>
+                    <li class="nav-item">
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#register" class="btn btn-outline-warning">Kaydol</button>
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#sign-in" class="btn btn-outline-success">Giriş Yap</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--MODAL-->
+
+    <!-- register-->
+    <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="modal fade" id="register">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <span class=" fw-bolder fs-4">Üye Ol</span>
+                    <button data-bs-dismiss="modal" class="btn-close"></button>
+                  </div>
+                  <div class="modal-body">
+                      <div>
+                        <label for="name" class="col-form-label">Kullanıcı Adı</label>
+                        <input type="text" class=" form-control" id="name">
+                      </div>
+                      <div>
+                        <label for="pass1" class="col-form-label">Parola</label>
+                        <input type="text" class=" form-control" id="pass1">
+                      </div>
+                      <div>
+                        <label for="email" class="col-form-label">E-mail</label>
+                        <input type="email" class=" form-control" id="email">
+                      </div>
+                      <div>
+                        <label for="phone" class="col-form-label">Telefon</label>
+                        <input type="number" class=" form-control" id="phone">
+                      </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Çıkış</button>
+                    <button type="button" class="btn btn-success ">Onayla</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    <!-- sign-in-->
+    <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="modal fade" id="sign-in">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <span class=" fw-bolder fs-4">Giriş Yap</span>
+                    <button data-bs-dismiss="modal" class="btn-close"></button>
+                  </div>
+                  <div class="modal-body">
+                      <div>
+                        <label for="name" class="col-form-label">Kullanıcı Adı veya E-mail</label>
+                        <input type="text" class=" form-control" id="name">
+                      </div>
+                      <div>
+                        <label for="pass1" class="col-form-label">Parola</label>
+                        <input type="text" class=" form-control" id="pass1">
+                      </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Çıkış</button>
+                    <button type="button" class="btn btn-success ">Onayla</button>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>       
+    </div>
+    
+    <!--! HERO-->
+    <section class="container bg-white shadow-lg my-5 rounded-2 px-5">
+        <div class="row align-items-center justify-content-between p-3">
+            <div class="col-sm-12 col-md-6">
+                <h1>Yazılım Öğrenmek İstiyorsanız Doğru Yerdesiniz!</h1>
+                <p>Teknolojiye adım atmaya hazır mısınız? Yazılım eğitim kampımız, sizi yazılım dünyasında başarılı olmanız için ihtiyaç duyduğunuz bilgi ve becerilerle donatmak için tasarlanmıştır. Eğitmenlerimiz, öğrenme yolculuğunuzun her adımında size rehberlik edecek ve size bir kodlama uzmanı olmanız için gereken güveni ve araçları verecektir!</p>
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <img class="mw-100" src="/images/banner.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!--! CARDS-->
+
+    <section class="text-light text-center">
+        <div class="container d-flex align-items-center justify-content-center">
+
+          <div class="row w-75">
+
+            <div class=" card-group my-3 gap-3">
+
+              <div class="card rounded-2">
+                <div class="card-img text-center"><img style="max-width: 100%; height: 200px;" src="/images/front-end.jpg" alt=""></div>
+                <div class="card-body">
+                  <h2 class="text-dark mb-3">Frontend</h2>
+                  <p class="text-secondary">Frontend eğitimi bootcampi, web tasarımı ve geliştirme becerilerini geliştirmek için profesyonel bir programdır. HTML, CSS, JavaScript ve diğer teknolojiler öğrenilir.</p>
+                </div>
+                <div class="card-footer py-2">
+                  <button class="btn btn-primary">Detaylı Bilgi</button>
+                </div>
+              </div>
+
+              <div class="card rounded-2">
+                <div class="card-img text-center"><img style="max-width: 100%; height: 200px;" src="/images/quality.jpg" alt=""></div>
+                <div class="card-body">
+                  <h2 class="text-dark mb-3">Quality Assuarance</h2>
+                  <p class="text-secondary">Mükemmeliyetçi yazılım test etme becerileri kazandırmak için profesyonel bir programdır. Test metodları, en iyi uygulamalar ve araçlar öğrenilir.</p>
+                </div>
+                <div class="card-footer py-2">
+                  <button class="btn btn-primary">Detaylı Bilgi</button>
+                </div>
+              </div>
+              
+              <div class="card rounded-2">
+                <div class="card-img text-center"><img style="max-width: 100%; height: 200px;" src="/images/react-native.jpg" alt=""></div>
+                <div class="card-body">
+                  <h2 class="text-dark mb-3">React Native</h2>
+                  <p class="text-secondary">Mobil uygulamalar için kullanılan React Native platformunun kullanımını öğreten profesyonel bir programdır. JavaScript, ReactJS ve diğer teknolojiler öğrenilir.</p>
+                </div>
+                <div class="card-footer py-2">
+                  <button class="btn btn-primary">Detaylı Bilgi</button>
+                </div>
+              </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!--! GOALS-->
+    
+    <section>
+        <div class="container bg-dark text-white p-5 my-5 rounded-3 text-center">
+          <div class="row">
+            <div class="col">
+              <h1 class="h1 mb-5">Neyi amaçlıyoruz?</h1>
+            </div>
+          </div>
+          <div class="row card-group gap-3">
+
+            <div class="card col-md bg-secondary rounded-2">
+              <div class="card-body">
+                <h2 class="h2 text-warning pb-2">Gerçeğe Dayalı</h2>
+                <p class="lead">Öğrencilere gerçek dünya uygulamalarında kullanabilecekleri beceriler kazandırmaktır. Örneğin, öğrenciler web siteleri ve uygulamalar yazabilecek, veri analizi yapabilecek, veritabanları yönetebilecek veya mobil uygulamalar oluşturabilecektir.</p>
+              </div>
+            </div>
+
+            <div class="card col-md bg-secondary rounded-2">
+                <div class="card-body">
+                  <h2 class="h2 text-warning pb-2">Temel Odaklı</h2>
+                  <p class="lead">Öğrencilere temel programlama kavramlarını ve pratik uygulamalarını öğretmektir. Bu, öğrencilere bilgisayar programlama dilleri konusunda temel bilgi ve becerileri kazandırmak için gereklidir</p>
+                </div>
+              </div>
+
+            <div class="card col-md bg-secondary rounded-2">
+              <div class="card-body">
+                <h2 class="h2 text-warning pb-2">İş Dünyasıyla Koordineli</h2>
+                <p class="lead">Program süresince öğrencilere gerçek dünya uygulamalarında kullanabilecekleri beceriler kazandırmak ve onları iş pazarına hazırlamak için tasarlanmıştır. Öğrenciler programı bitirdikten sonra, yazılım sektöründe iş bulabilecektir.</p>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+
+    <!--! FOOTER-->
+
+    <section>
+        <div class="container">
+            <footer class="py-5">
+              <div class="row">
+                <div class="col-6 col-md-2 mb-3">
+                  <h5 class="mb-3"><span><i class="bi-flag"></i></span> English</h5>
+                  <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                  </ul>
+                </div>
+          
+                <div class="col-6 col-md-2 mb-3">
+                  <h5 class="mb-3"><span><i class="bi-award"></i></span> Popüler</h5>
+                  <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Front End</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">React Native</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">IOS Swift</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Quality Assuarance</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Tester</a></li>
+                  </ul>
+                </div>
+          
+                <div class="col-6 col-md-2 mb-3">
+                  <h5 class="mb-3"><span><i class="bi-people"></i></span> Sosyal Medya</h5>
+                  <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><span><i class="bi-github"></i></span> Github</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><span><i class="bi-linkedin"></i></span> Linkedin</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><span><i class="bi-youtube"></i></span> Youtube</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><span><i class="bi-facebook"></i></span> Facebook</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><span><i class="bi-twitter"></i></span> Twitter</a></li>
+                  </ul>
+                </div>
+          
+                <div class="col-md-5 offset-md-1 mb-3">
+                  <form>
+                    <h5>Subscribe to our newsletter</h5>
+                    <p>Monthly digest of what's new and exciting from us.</p>
+                    <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                      <label for="newsletter1" class="visually-hidden">Email address</label>
+                      <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                      <button class="btn btn-primary" type="button">Subscribe</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+          
+              <div>
+                <hr>
+                <p>Udemig Company, Inc. &copy;All rights reserved | 2023</p>       
+              </div>
+            </footer>
+          </div>
+    </section>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

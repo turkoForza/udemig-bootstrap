@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap.css">  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+</head>
+<body class="bg-body-secondary">
+
+    <!--! NAVBAR-->
+    <nav class="navbar navbar-expand-md bg-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img class="img-thumbnail" style="height: 60px;" src="/images/Udemig.png" alt=""> Udemig
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div id="nContent" class="collapse navbar-collapse justify-content-end">
+                <ul class="navbar-nav gap-4">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Anasayfa</a></li>
+                    <li class="nav-item"><a class="nav-link" href="eğitimlerimiz.html">Eğitimlerimiz</a></li>
+                    <li class="nav-item"><a class="nav-link" href="iletişim.html">İletişim</a></li>
+                    <li class="nav-item">
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#register" class="btn btn-outline-warning">Kaydol</button>
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#sign-in" class="btn btn-outline-success">Giriş Yap</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--MODAL-->
+
+    <!-- register-->
+    <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="modal fade" id="register">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <span class=" fw-bolder fs-4">Üye Ol</span>
+                    <button data-bs-dismiss="modal" class="btn-close"></button>
+                  </div>
+                  <div class="modal-body">
+                      <div>
+                        <label for="name" class="col-form-label">Kullanıcı Adı</label>
+                        <input type="text" class=" form-control" id="name">
+                      </div>
+                      <div>
+                        <label for="pass1" class="col-form-label">Parola</label>
+                        <input type="text" class=" form-control" id="pass1">
+                      </div>
+                      <div>
+                        <label for="email" class="col-form-label">E-mail</label>
+                        <input type="email" class=" form-control" id="email">
+                      </div>
+                      <div>
+                        <label for="phone" class="col-form-label">Telefon</label>
+                        <input type="number" class=" form-control" id="phone">
+                      </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Çıkış</button>
+                    <button type="button" class="btn btn-success ">Onayla</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    <!-- sign-in-->
+    <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="modal fade" id="sign-in">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <span class=" fw-bolder fs-4">Giriş Yap</span>
+                    <button data-bs-dismiss="modal" class="btn-close"></button>
+                  </div>
+                  <div class="modal-body">
+                      <div>
+                        <label for="name" class="col-form-label">Kullanıcı Adı veya E-mail</label>
+                        <input type="text" class=" form-control" id="name">
+                      </div>
+                      <div>
+                        <label for="pass1" class="col-form-label">Parola</label>
+                        <input type="text" class=" form-control" id="pass1">
+                      </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Çıkış</button>
+                    <button type="button" class="btn btn-success ">Onayla</button>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>       
+    </div>
+
+    <!--! MAİN CONTENT-->
+
+    <main class="container">
+
+      <div class="row">
+
+        <div class="col-sm-12 col-md-6">
+          <span class="h1 bg-dark text-white d-block text-center my-3 rounded-2">Bize Ulaşın</span>
+          <p>Merhaba, Bootcamp websitesi olarak bizlere ulaşmak için lütfen bize iletişim alanından mesaj gönderin. Size en hızlı şekilde cevap verecek ekibimizle birlikte sizin için en uygun yazılım eğitim programını sunmaya hazırız. Ayrıca, eğitimlerimiz hakkında detaylı bilgi almak isterseniz, bize telefon numaranızı bırakarak biz sizinle iletişime geçebiliriz. Sizin yazılım eğitimine katılmanız için sabırsızlanıyoruz. Saygılarımızla, Bootcamp ekibi.</p>
+        </div>
+
+        <div class="col py-3 mx-1">
+          <h1 class="bg-dark text-white text-center rounded-2">Merkez Adres:</h1>
+          <p class="mt-3 ms-3 d-block fs-3 fw-lighter">Hayyam Mahallesi Menemen Bulvarı No:99</p>
+          <h5 class="text-end">Beyoğlu / İSTANBUL</h5>
+        </div>
+
+      </div>
+
+      <div class="row">
+
+        <div class="col-sm-12 col-md-6 bg-dark-subtle py-3 px-5 rounded-2">
+
+            <div>
+              <label for="name" class="form-label">Ad Soyad: <input id="name" type="text" class="form-control"></label>
+
+              <label for="phone" class="form-label">Tel No: <input id="phone" type="tel" class="form-control"></label>
+            </div>
+
+            <div>
+              <label class for="eposta" class="form-label">E-mail: <input id="eposta" type="email" class="form-control"></label>
+
+              <label for="city" class="form-label">Şehir: <input id="city" class="form-control"></label>
+            </div>
+
+            <div>
+              <label class="w-75" for="eposta" class="form-label">Mesajınızı Yazın: <textarea id="eposta" type="email" class="form-control"></textarea></label>
+
+              <input class="btn-sm d-block border-0 rounded-1" type="submit" class="form-control">
+            </div>
+
+        </div>
+
+        <div class="col">
+          <iframe class="rounded-2 ms-3" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48146.989687736124!2d28.932360110335452!3d41.04304269995235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab75ad870363d%3A0x25bc05b50533efb0!2zQmV5b8SfbHUvxLBzdGFuYnVs!5e0!3m2!1str!2str!4v1675188584683!5m2!1str!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+      </div>
+
+      
+
+    </main>
+
+    <!--! FOOTER-->
+
+    <section>
+        <div class="container">
+            <footer class="py-5">
+              <div class="row">
+                <div class="col-6 col-md-2 mb-3">
+                  <h5 class="mb-3"><span><i class="bi-flag"></i></span> English</h5>
+                  <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                  </ul>
+                </div>
+          
+                <div class="col-6 col-md-2 mb-3">
+                  <h5 class="mb-3"><span><i class="bi-award"></i></span> Popüler</h5>
+                  <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Front End</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">React Native</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">IOS Swift</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Quality Assuarance</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Tester</a></li>
+                  </ul>
+                </div>
+          
+                <div class="col-6 col-md-2 mb-3">
+                  <h5 class="mb-3"><span><i class="bi-people"></i></span> Sosyal Medya</h5>
+                  <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><span><i class="bi-github"></i></span> Github</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><span><i class="bi-linkedin"></i></span> Linkedin</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><span><i class="bi-youtube"></i></span> Youtube</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><span><i class="bi-facebook"></i></span> Facebook</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><span><i class="bi-twitter"></i></span> Twitter</a></li>
+                  </ul>
+                </div>
+          
+                <div class="col-md-5 offset-md-1 mb-3">
+                  <form>
+                    <h5>Subscribe to our newsletter</h5>
+                    <p>Monthly digest of what's new and exciting from us.</p>
+                    <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                      <label for="newsletter1" class="visually-hidden">Email address</label>
+                      <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                      <button class="btn btn-primary" type="button">Subscribe</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+          
+              <div>
+                <hr>
+                <p>Udemig Company, Inc. &copy;All rights reserved | 2023</p>       
+              </div>
+            </footer>
+          </div>
+    </section>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
