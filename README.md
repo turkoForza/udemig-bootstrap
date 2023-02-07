@@ -4,4 +4,6 @@
 
 <span>Bootstrap 5</span>
 
+<a href="https://velvety-syrniki-1dad4f.netlify.app/">Online Review</a>
+
 <img src="/images/screen.gif">
